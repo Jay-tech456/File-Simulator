@@ -3,6 +3,7 @@
 
 
 import java.io.IOException;
+import java.security.SecureRandom;
 import java.util.Scanner;
 import java.io.File;
 import java.util.Random;
@@ -25,7 +26,7 @@ public class Main {
         if (i == 2) {
 
 
-            Random rand = new Random();
+            Random rand = new SecureRandom();
 
             String file = "src/testing.txt";
            Scanner scanner = new Scanner ( new File(file));

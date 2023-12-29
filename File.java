@@ -1,4 +1,5 @@
 
+import java.security.SecureRandom;
 import java.util.Scanner;
 import java.util.Random;
 public class File {
@@ -122,7 +123,7 @@ public class File {
            this.fileNum[count] = count;
            this.SIZE[count] = size;
 
-            Random random = new Random();
+            Random random = new SecureRandom();
             int randomInt = random.nextInt(4);
             this.text[count] = fileArray[randomInt];
 //           System.out.println(this.text[count]);
